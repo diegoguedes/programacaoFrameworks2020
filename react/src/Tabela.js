@@ -13,14 +13,14 @@ const TableHead = () => {
     );
 }
 const TableBody = props => {
-    const linhas = props.nf.map((linha, index) => {
+    const linhas = props.nf.map(linha => {
         return (
-            <tr key={index}>
+            <tr key={linha.id}>
                 <td>{linha.empresa}</td>
                 <td>{linha.valorBruto}</td>
                 <td>{linha.imposto}</td>
                 <td><button className="btn waves-effect waves-light red darken-4" onClick={() => {
-                    props.removeNotaFiscal(index)
+                    props.removeNotaFiscal(linha.id)
                 }
                 } >Remover</button></td>
             </tr>

@@ -17,6 +17,10 @@ class Formulario extends Component {
             [name]: value
         });
     }
+    submitFormulario = () => {
+        this.props.escutadorDeSubmit(this.state);
+        this.setState(this.stateInicial);
+    }
     render() {
         const { empresa, valorBruto, imposto } = this.state;
         return (
@@ -45,7 +49,7 @@ class Formulario extends Component {
                     value={imposto}
                     onChange={this.inputListener}
                 />
-                <button className="btn waves-effect waves-light red darken-4" type="button">Salvar
+                <button onClick={this.submitFormulario} className="btn waves-effect waves-light red darken-4" type="button">Salvar
                 </button>
             </form>
         )
