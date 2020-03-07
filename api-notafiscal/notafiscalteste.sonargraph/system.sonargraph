@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<ns2:softwareSystem xmlns:ns2="http://www.hello2morrow.com/sonargraph/core" id="6b8a04107fc5ac2ea9972c354178e27b" version="9.12.1.582">
+	<description></description>
+	<module xmlns:ns4="http://www.hello2morrow.com/sonargraph/languageprovider/java" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns4:xsdJavaModule" name="notafiscal" id="954dc4efcb24bc216fe58317afbe45c7" language="Java">
+		<description></description>
+		<rootPath xsi:type="ns4:xsdSourceRootPath" name="./src/main/java"></rootPath>
+		<rootPath name="./target/classes"></rootPath>
+	</module>
+</ns2:softwareSystem>
